@@ -11,7 +11,12 @@ function getInputValueById (inputId){
 // calculate triangle area by function
 function triangleArea (base, height){
     area = 0.5 * base * height;
-    return area;
+    if(isNaN(area)){
+        alert('Please enter a valid number')
+    }
+    else{
+        return (area.toFixed(2));
+    }
 }
 
 

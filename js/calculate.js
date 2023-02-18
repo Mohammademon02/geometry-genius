@@ -12,6 +12,7 @@ document.getElementById('btn-triangle').addEventListener('click', function(){
     const area = triangleArea(triangleFieldBase, triangleFielHeight);
 
     console.log(area)
+
 })
 
 
@@ -25,7 +26,9 @@ document.getElementById('btn-rectangle').addEventListener('click', function () {
 
     const area = rectangleArea(rectangleFieldwidth, rectangleFieldHeight);
 
-    console.log(area);
+    const areaContainer = document.getElementById('area-container');
+
+    areaContainer.innerHTML = `<li class="text-2xl mt-5"> Rectangle Area <span> ${area}cm </span>`;
 
 })
 
@@ -40,7 +43,11 @@ document.getElementById('btn-parallelogram').addEventListener('click', function 
 
     const area = parallelogramArea(parallelogramBase, parallelogramHeight);
 
-    console.log(area)
+    const areaContainer = document.getElementById('area-container');
+
+    const ol = document.createElement('ol');
+    ol.innerText = `<li class="text-2xl mt-5"> Parallelogram Area <span> ${area}cm </span>`
+    // areaContainer.innerHTML = `<li class="text-2xl mt-5"> Parallelogram Area <span> ${area}cm </span>`;
 })
 
 
@@ -54,7 +61,9 @@ document.getElementById('btn-rhombus').addEventListener('click', function () {
 
     const area = parallelogramArea(rhombusDiagonalFirst, rhombusDiagonalSecond);
 
-    console.log(area)
+    const areaContainer = document.getElementById('area-container');
+
+    areaContainer.innerHTML = `<li class="text-2xl mt-5"> Rhombus Area <span> ${area}cm </span>`;
 })
 
 
@@ -69,7 +78,9 @@ document.getElementById('btn-pentagon').addEventListener('click', function () {
 
     const area = pentagonArea(pentagonP, pentagonB);
 
-    console.log(area)
+    const areaContainer = document.getElementById('area-container');
+
+    areaContainer.innerHTML = `<li class="text-2xl mt-5"> Pentagon Area <span> ${area}cm </span>`;
 })
 
 
@@ -84,7 +95,9 @@ document.getElementById('btn-ellipse').addEventListener('click', function () {
 
     const area = ellipseArea(ellipseA, ellipseB);
 
-    console.log(area)
+    const areaContainer = document.getElementById('area-container');
+
+    areaContainer.innerHTML = `<li class="text-2xl mt-5"> Ellipse Area <span> ${area}cm </span>`;
 })
 
 
