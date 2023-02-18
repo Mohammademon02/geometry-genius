@@ -9,9 +9,14 @@ document.getElementById('btn-triangle').addEventListener('click', function(){
 
     const triangleFielHeight = getInputValueById('triangle-field-h')
 
-    const area = triangleArea(triangleFieldBase, triangleFielHeight);
+    const area = 0.5 * (triangleFieldBase * triangleFielHeight);
 
-    console.log(area)
+    if(isNaN (area)){
+        alert('Please enter a valid number')
+    }
+    else{
+        console.log(area.toFixed(2))
+    }
 
 })
 
@@ -24,11 +29,14 @@ document.getElementById('btn-rectangle').addEventListener('click', function () {
 
     const rectangleFieldHeight = getInputValueById('rectangle-field-l');
 
-    const area = rectangleArea(rectangleFieldwidth, rectangleFieldHeight);
+    const area = (rectangleFieldwidth * rectangleFieldHeight);
 
-    const areaContainer = document.getElementById('area-container');
-
-    areaContainer.innerHTML = `<li class="text-2xl mt-5"> Rectangle Area <span> ${area}cm </span>`;
+    if(isNaN (area)){
+        alert('Please enter a valid number')
+    }
+    else{
+        console.log(area.toFixed(2))
+    }
 
 })
 
