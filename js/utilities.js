@@ -9,18 +9,18 @@ function getInputValueById (inputId){
 }
 
 // calculate triangle area by function
-function triangleArea (base, height){
-    area = 0.5 * base * height;
-    return area;
-}
+// function triangleArea (base, height){
+//     area = 0.5 * base * height;
+//     return area;
+// }
 
 
 // calculate rectangle area by function
 
-function rectangleArea (width, height) {
-    area = width * height;
-    return area;
-}
+// function rectangleArea (width, height) {
+//     area = width * height;
+//     return area;
+// }
 
 
 // get the value of text element by function
@@ -62,6 +62,22 @@ function pentagonArea (perimeter, base) {
 function ellipseArea (A, B) {
     area = 3.1416 * A * B;
     return area;
+}
+
+
+// add to card by function
+
+function card(serial, geometryName, geometryValue){
+    const container = document.getElementById('table-container');
+    const tr = document.createElement("tr");
+    tr.innerHTML = `
+    <td>${serial}</td>
+    <td>${geometryName}</td>
+    <td>${geometryValue}cm<sup>2</td>
+    <td><button class="bg-emerald-700 py-3 px-2 text-white rounded">Convert to m<sup>2</sup><button></td>
+    `
+    const documents = container.appendChild(tr);
+    console.log(documents)
 }
 
 
