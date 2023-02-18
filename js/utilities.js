@@ -41,3 +41,27 @@ function parallelogramArea (base, height){
 }
 
 
+// calculate rhombus area by function
+
+function rhombusArea (diagonal1, diagonal2) {
+    area = 0.5 * diagonal1 * diagonal2;
+    return area;
+}
+
+
+// calculate pentagon area by function
+
+function pentagonArea (perimeter, base) {
+    area = 0.5 * perimeter * base;
+    return area;
+}
+
+
+// calculate pentagon area by function
+
+function ellipseArea (A, B) {
+    area = 3.1416 * A * B;
+    return area;
+}
+
+

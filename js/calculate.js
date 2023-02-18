@@ -46,3 +46,46 @@ document.getElementById('btn-parallelogram').addEventListener('click', function 
 
 // rhombus area calculate
 
+document.getElementById('btn-rhombus').addEventListener('click', function () {
+
+    const rhombusDiagonalFirst = getTextElementValueById('rhombus-diagonal1');
+
+    const rhombusDiagonalSecond = getTextElementValueById('rhombus-diagonal2')
+
+    const area = parallelogramArea(rhombusDiagonalFirst, rhombusDiagonalSecond);
+
+    console.log(area)
+})
+
+
+
+// pentagon area calculate
+
+document.getElementById('btn-pentagon').addEventListener('click', function () {
+
+    const pentagonP = getTextElementValueById('pentagon-p');
+
+    const pentagonB = getTextElementValueById('pentagon-b')
+
+    const area = pentagonArea(pentagonP, pentagonB);
+
+    console.log(area)
+})
+
+
+
+// ellipse area calculate
+
+document.getElementById('btn-ellipse').addEventListener('click', function () {
+
+    const ellipseA = getTextElementValueById('ellipse-a');
+
+    const ellipseB = getTextElementValueById('ellipse-b')
+
+    const area = ellipseArea(ellipseA, ellipseB);
+
+    console.log(area)
+})
+
+
+
